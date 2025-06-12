@@ -52,7 +52,7 @@ const Contact = () => {
             title: 'custom-swal-title',
             htmlContainer: 'custom-swal-text'
           },
-          backdrop: 'rgba(0, 0, 0, 0.4)'  // ✅ Removed the missing GIF
+          backdrop: 'rgba(0, 0, 0, 0.5)' // ✅ simple dark backdrop, no image
         });
 
         if (window.navigator.vibrate) window.navigator.vibrate(100);

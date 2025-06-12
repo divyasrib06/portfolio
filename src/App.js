@@ -5,7 +5,6 @@ import './assets/css/global.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 // Components
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -21,7 +20,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL || '/portfolio'}>
       <Navbar />
       <main className="main">
         <Routes>
