@@ -40,7 +40,6 @@ const Contact = () => {
       const resText = await response.text();
 
       if (response.ok) {
-        // ✅ Success SweetAlert
         Swal.fire({
           title: 'Success 🎉',
           html: '<b>Your message has been delivered successfully!</b><br>Thanks for reaching out.',
@@ -53,18 +52,13 @@ const Contact = () => {
             title: 'custom-swal-title',
             htmlContainer: 'custom-swal-text'
           },
-          backdrop: `
-            rgba(0, 0, 0, 0.4)
-            url("/images/mail-sent.gif")
-            no-repeat center
-          `
+          backdrop: 'rgba(0, 0, 0, 0.4)'  // ✅ Removed the missing GIF
         });
 
         if (window.navigator.vibrate) window.navigator.vibrate(100);
         window.scrollTo({ top: 0, behavior: 'smooth' });
         setFormData({ name: '', email: '', message: '' });
       } else {
-        // ❌ Backend returned error
         throw new Error(resText || 'Something went wrong. Try again.');
       }
 
