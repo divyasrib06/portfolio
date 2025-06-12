@@ -63,7 +63,8 @@
   width: 20px;
   height: 40px;
   padding: 0 12px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
+background: rgba(39, 40, 41, 0.08); /* Equivalent to 92% transparent black */
+
   border-radius: 40px;
   color: var(--nav-color);
   font-family: var(--nav-font);

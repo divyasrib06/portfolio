@@ -24,7 +24,7 @@
 
 .home:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
+  background: rgba(255, 255, 255, 0.6); /* Replace color-mix with fallback */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -68,7 +68,7 @@
 .home .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: rgba(0, 0, 0, 0.7); /* Replace color-mix with rgba fallback */
   margin: 0 10px;
   transition: 0.3s ease;
 }

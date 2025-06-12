@@ -48,9 +48,10 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: rgba(5, 99, 187, 0.75); /* Approximate fallback for 25% transparent accent */
   text-decoration: none;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
